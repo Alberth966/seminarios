@@ -1,0 +1,21 @@
+"Media y Mediana de Edades"
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+edades = [25, 30, 35, 40, 45, 50, 55]
+media = np.mean(edades)
+mediana = np.median(edades)
+print(f"La media es: {media}")
+print(f"La mediana es: {mediana}")
+plt.bar(range(len(edades)), edades, color='lightblue', alpha=0.7)
+plt.axhline(media, color='red', linestyle='dashed', linewidth=2, label=f'Media: {media}')
+plt.axhline(mediana, color='blue', linestyle='dashed', linewidth=2, label=f'Mediana: {mediana}')
+plt.title('Edades de las Personas')
+plt.xlabel('Índice')
+plt.ylabel('Edad')
+plt.legend()
+plt.show()
+
+edades =[25, 30, 35, 40,45,50,55]
+
